@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document DocumentIdentifier="201142001P001370996" DocumentFilename="201142001P001370996.xml" TotalPageCount="4">
+  <Page Filename="document_8_envelope_page_1.pdf" ImageOffset="0" PageType="CONTENT" ParentPageType="ENV" HighValueClaim="FALSE" DocumentIdentifier="201110201P001000008">
+    <Field FieldName="Capture Application">
+      <Output CapturedValue="OPENBOX" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="OPENBOX"/>
+      </Output>
+    </Field>
+    <Field FieldName="System ID">
+      <Output CapturedValue="DAYCS3-01" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="DAYCS3-01"/>
+      </Output>
+    </Field>
+    <Field FieldName="Customer Number">
+      <Output CapturedValue="septclient" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="septclient"/>
+      </Output>
+    </Field>
+    <Field FieldName="Engagement">
+      <Output CapturedValue="septclient_project" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="septclient_project"/>
+      </Output>
+    </Field>
+    <Field FieldName="Batch_Class">
+      <Output CapturedValue="APPEALS" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="APPEALS"/>
+      </Output>
+    </Field>
+    <Field FieldName="Batch_ID">
+      <Output CapturedValue="Testing" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="12345"/>
+      </Output>
+    </Field>
+    <Field FieldName="Batch_Name">
+      <Output CapturedValue="Testing" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="12345"/>
+      </Output>
+    </Field>
+    <Field FieldName="Batch_Priority">
+      <Output CapturedValue="8" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="8"/>
+      </Output>
+    </Field>
+    <Field FieldName="Batch_Creation_Date">
+      <Output CapturedValue="20200423" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="20200423"/>
+      </Output>
+    </Field>
+    <Field FieldName="Batch_Creation_Time">
+      <Output CapturedValue="111247" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="111247"/>
+      </Output>
+    </Field>
+    <Field FieldName="Tracking_ID">
+      <Output CapturedValue="9489009000276146755138" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="9489009000276146755138"/>
+      </Output>
+    </Field>
+    <Field FieldName="Unique Barcode">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value=""/>
+      </Output>
+    </Field>
+    <Field FieldName="Received_Method">
+      <Output CapturedValue="SCAN" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="SCAN"/>
+      </Output>
+    </Field>
+    <Field FieldName="Received_Location">
+      <Output CapturedValue="230 N Main St, Dayton, OH 45402" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="230 N Main St, Dayton, OH 45402"/>
+      </Output>
+    </Field>
+    <Field FieldName="Received_Time_Zone">
+      <Output CapturedValue="-5" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="-5"/>
+      </Output>
+    </Field>
+    <Field FieldName="Received_Date">
+      <Output CapturedValue="20200914" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="20200914"/>
+      </Output>
+    </Field>
+    <Field FieldName="Received_Time">
+      <Output CapturedValue="120000" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="120000"/>
+      </Output>
+    </Field>
+    <Field FieldName="Source_File_Name">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Courier_Name">
+      <Output CapturedValue="USPS" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="USPS"/>
+      </Output>
+    </Field>
+    <Field FieldName="Container_ID">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Document_Type">
+      <Output CapturedValue="testing" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="testing"/>
+      </Output>
+    </Field>
+    <Field FieldName="File_Size">
+      <Output CapturedValue="434923" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="434923" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="MailSorterUID">
+      <Output CapturedValue="ABC000000123" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="ABC000000123" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Sorter_Time_Zone">
+      <Output CapturedValue="-5" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="-5"/>
+      </Output>
+    </Field>
+    <Field FieldName="Sorter_Date">
+      <Output CapturedValue="20200423" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="20200423"/>
+      </Output>
+    </Field>
+    <Field FieldName="Sorter_Time">
+      <Output CapturedValue="071247" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="071247"/>
+      </Output>
+    </Field>
+    <Field FieldName="Scanning Location">
+      <Output CapturedValue="230 N Main St, Dayton, OH 45402" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="230 N Main St, Dayton, OH 45402"/>
+      </Output>
+    </Field>
+    <Field FieldName="SCAN_Time_zone">
+      <Output CapturedValue="-5" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="-5" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="SCAN_Date">
+      <Output CapturedValue="20200913" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="20200913s"/>
+      </Output>
+    </Field>
+    <Field FieldName="SCAN_Time">
+      <Output CapturedValue="071247" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="071247"/>
+      </Output>
+    </Field>
+    <Field FieldName="Scan_File_Name">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Rescan">
+      <Output CapturedValue="N" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="N" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Scan_Operator_ID">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="ScanQC_Operator_ID">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Index_Time_zone">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Index_Operator_ID">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Index_Date">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Index_Time">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Index_Keystrokes">
+      <Output CapturedValue="0" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="0" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="IndexQC_Time_zone">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="IndexQC_Operator_ID">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="IndexQC_Date">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="IndexQC_Time">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="IndexQC_Keystrokes">
+      <Output CapturedValue="0" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="0" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Release_Time_zone">
+      <Output CapturedValue="-4" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="-4" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Release_Date">
+      <Output CapturedValue="20200423" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="20200423"/>
+      </Output>
+    </Field>
+    <Field FieldName="Release_Time">
+      <Output CapturedValue="021726" KeyPassesRequired="0">
+        <DataSource Confidence="100" ConfidenceString="" Name="SYSTEM" Value="021726"/>
+      </Output>
+    </Field>
+    <Field FieldName="Page_Count">
+      <Output CapturedValue="4" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="4" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Front Page Count">
+      <Output CapturedValue="4" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="4" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Back Page Count">
+      <Output CapturedValue="0" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="0" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Number_of_Images">
+      <Output CapturedValue="4" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="4" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Image_Bit_Depth">
+      <Output CapturedValue="1" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="1" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Recipient Name">
+      <Output CapturedValue="Vinay191020" KeyPassesRequired="0">
+        <DataSource Confidence="95" ConfidenceString="" Name="SYSTEM" Value="Vinay191020"/>
+      </Output>
+    </Field>
+    <Field FieldName="Recipient Name1">
+      <Output CapturedValue="CARESOURCE" KeyPassesRequired="0">
+        <DataSource Confidence="95" ConfidenceString="" Name="SYSTEM" Value="CARESOURCE"/>
+      </Output>
+    </Field>
+    <Field FieldName="Recipient Email">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Recipient Address1">
+      <Output CapturedValue="PO BOX 2008" KeyPassesRequired="0">
+        <DataSource Confidence="95" ConfidenceString="" Name="SYSTEM" Value="PO BOX 2008"/>
+      </Output>
+    </Field>
+    <Field FieldName="Recipient Address2">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Confidence="95" ConfidenceString="" Name="SYSTEM" Value=""/>
+      </Output>
+    </Field>
+    <Field FieldName="Recipient City">
+      <Output CapturedValue="DAYTON" KeyPassesRequired="0">
+        <DataSource Confidence="95" ConfidenceString="" Name="SYSTEM" Value="DAYTON"/>
+      </Output>
+    </Field>
+    <Field FieldName="Recipient State">
+      <Output CapturedValue="OH" KeyPassesRequired="0">
+        <DataSource Confidence="95" ConfidenceString="" Name="SYSTEM" Value="OH"/>
+      </Output>
+    </Field>
+    <Field FieldName="Recipient Postal Code">
+      <Output CapturedValue="45401" KeyPassesRequired="0">
+        <DataSource Confidence="95" ConfidenceString="" Name="SYSTEM" Value="45401"/>
+      </Output>
+    </Field>
+    <Field FieldName="Sender Name">
+      <Output CapturedValue="ORANGE PARK SHARED SERVICES" KeyPassesRequired="0">
+        <DataSource Confidence="95" ConfidenceString="" Name="SYSTEM" Value="ORANGE PARK SHARED SERVICES"/>
+      </Output>
+    </Field>
+    <Field FieldName="Sender Name1">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Confidence="95" ConfidenceString="" Name="SYSTEM" Value=""/>
+      </Output>
+    </Field>
+    <Field FieldName="Sender Company">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="0" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Sender Email">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Sender Address1">
+      <Output CapturedValue="335 CROSSING BLVD" KeyPassesRequired="0">
+        <DataSource Confidence="95" ConfidenceString="" Name="SYSTEM" Value="335 CROSSING BLVD"/>
+      </Output>
+    </Field>
+    <Field FieldName="Sender Address2">
+      <Output CapturedValue="31st Floor" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="31st Floor" Confidence="95" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Sender City">
+      <Output CapturedValue="ORANGE PARK" KeyPassesRequired="0">
+        <DataSource Confidence="95" ConfidenceString="" Name="SYSTEM" Value="ORANGE PARK"/>
+      </Output>
+    </Field>
+    <Field FieldName="Sender State">
+      <Output CapturedValue="FL" KeyPassesRequired="0">
+        <DataSource Confidence="95" ConfidenceString="" Name="SYSTEM" Value="FL"/>
+      </Output>
+    </Field>
+    <Field FieldName="Sender Postal Code">
+      <Output CapturedValue="32073" KeyPassesRequired="0">
+        <DataSource Confidence="95" ConfidenceString="" Name="SYSTEM" Value="32073"/>
+      </Output>
+    </Field>
+    <Field FieldName="Postal Post Location">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Postal Post Date">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Department">
+      <Output CapturedValue="Testing191020" KeyPassesRequired="0">
+        <DataSource Confidence="0" ConfidenceString="" Name="SYSTEM" Value="Testing191020"/>
+      </Output>
+    </Field>
+    <Field FieldName="JunkMail">
+      <Output CapturedValue="False" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="False" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="UserRoutingRule">
+      <Output CapturedValue="Deliver Physically and Digitally" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="Deliver Physically and Digitally" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="UserOptOut">
+      <Output CapturedValue="False" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="False" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <KeyWord><![CDATA[Squire Patton Boggs (US) LLP
+Sean Conboy (State Bar # 214487)
+sean.conboy@squirepb.com
+Sha Kim (State Bar # 307812)
+shaun. • @squirepb.com
+555South Flower Street, 31st Floor
+4 Los Angeles, California 90071
+Telephone: +1 213 624 2500
+5 ,Facs 'le: +1 213 623 4581
+6 Attorneys for Defendant
+VOLKSWAGEN GROUP OF I RICA, INC.
+7
+SUPERIOR COURT OF THE STATE OF CALIF 0
+9 CO OF LOS ANGELES
+10 C E K. NASSAR, Case No. 18STCV10160
+11 Plaintiff, DEFENDANT VOLKSWAGEN GROUP
+g 12 OF I RICA, INC'S DE I FOR
+V. EXCHANGE OF EXPERT WITNESS
+13 0' TION
+VOLKSWAGEN GROUP OF I RICA,
+14 INC., a New Jersey Corporation, and DOES 1 Action Filed: December 31, 2018
+3 ough 10, inclusive, FAC Filed: July 12, 2019
+15 Defendants.
+16
+17
+18 TO ALL P TIES A ATTO YS OF RECORD:
+19 Defendant VOLKSWAGEN GROUP OF hereby demands der Code
+RICA, INC.
+20 itaocedure Section 2034.210-240 that on April 27, 2020, all p. es to ihis_action mutually
+21. and simultaneously exchange info ation concerning each party's expert trial tness(es), in
+22 ng, as required by Code of Civil Procedure Section 2034.260, as follows:
+23 1. A tten list contai g the n. e and address of each natural person, including
+24 any party, whose oral or deposition test ony in the fo of an expert opinion the responding
+25 party expects to offer in evidence at the trial, or, in the alternative, a statement that the responding
+26 party does not presently intend to offer the test ony of any expert witness.
+27 2. If any witness on the list to be exchanged is an employee of the responding party,
+28 or has been retained by that party for the purpose of fo • ing and expressing an opinion in
+- 1 -
+'S DE FOR EXC GE OF EXPERT WI SS 0 TION
+010-9040-0463/
+]]></KeyWord>
+  </Page>
+  <Page Filename="document_8_content_page_1.pdf" ImageOffset="1" PageType="CONTENT" ParentPageType="ENV" HighValueClaim="FALSE" DocumentIdentifier="201110201P001000008">
+    <KeyWord><![CDATA[anticipation of the litigation or in preparation for the trial of the action, the designation of that
+witness shall include or be accompanied by a declaration that comports with the requirements of
+Code of Civil Procedure section 2034.260.
+'Dated: March 30, 2020 Squire Patton Boggs (US) LLP
+6
+7
+8 Sean P. Conboy
+Shaun.
+9 Attorneys for. Defendant
+10 VOLKSWAGEN GROUP OF RICA, INC.
+11
+12
+1:3
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+- 2 -
+010-9040-146 7S DE FOR EXC GE OF EXPERT A SS ON
+]]></KeyWord>
+  </Page>
+  <Page Filename="document_8_content_page_2.pdf" ImageOffset="2" PageType="CONTENT" ParentPageType="ENV" HighValueClaim="FALSE" DocumentIdentifier="201110201P001000008">
+    <KeyWord><![CDATA[rt
+z
+17:14
+1■1 cu
+,05 6,;
+cda
+0 0 to
+,T3
+I-I r•-■ 0
+; V)
+r4' cl
+t.0 "0 0
+4-1 tr) 0
+t•1 N
+0 al
+t-Pi C7)
+1/4.)
+'4c
+a)
+L'a N
+a) N
+, c:T
+re)
+,.0
+• • cr,
+a
+0
+N re) t 00 rn 1/40 N GO
+1■1 • .-1 • N N N N N N
+WOG "TuNT0.3 .61
+IC -ni.1.111+.1555
+d1-1&U S900111401...LV4 iös
+]]></KeyWord>
+  </Page>
+  <Page Filename="document_8_content_page_3.pdf" ImageOffset="3" PageType="CONTENT" ParentPageType="ENV" HighValueClaim="FALSE" DocumentIdentifier="201110201P001000008">
+    <KeyWord><![CDATA[SQUIREC) 44,1r45 °QS"'
+PAI ION BOGGS
+RECEIVED 000.500 PIT pwAs
+555 South Flower Street, 3 T st Floor 02 1P
+Los Arrgeles, CA 90071 00913399 MAR 30 2020
+00DE 90071
+RECENED
+a z .11 ,V2i111:, 1,0
+ApR
+Z500
+Los' Arig, es
+I
+]]></KeyWord>
+  </Page>
+</Document>

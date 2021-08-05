@@ -1,0 +1,1038 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-05T10:28:10.526Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6800951050,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Base.BrowsersetUp(Scenario)"
+            }
+          }
+        ],
+        "line": 1379,
+        "name": "Verify that redacted mail content is not visible to next mail recipient",
+        "description": "",
+        "id": "dmr-regression-suite-set2-2;verify-that-redacted-mail-content-is-not-visible-to-next-mail-recipient",
+        "after": [
+          {
+            "embeddings": [
+              {
+                "data": "iVBORw0KGgoAAAANSUhEUgAABVYAAAJlCAYAAAAxcKmfAAAAAXNSR0IArs4c6QAAEhZJREFUeJzt2MENwCAQwLDS/Xc+ViAvhGRPkHfWzMwHAAAAAMCx/3YAAAAAAMBrjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgMhYBQAAAACIjFUAAAAAgGgDSlsIxrrMYU8AAAAASUVORK5CYII\u003d",
+                "mime_type": "image/png"
+              }
+            ],
+            "result": {
+              "duration": 3843378793,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Base.closeBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 813094973,
+              "status": "passed"
+            },
+            "line": 1380,
+            "name": "update the \"small.xml\" with below values and zip it with \"document_8_envelope_page_1.pdf\" and \"small.pdf\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"small.xml\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"document_8_envelope_page_1.pdf\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"small.pdf\"",
+                  "offset": 94
+                }
+              ],
+              "location": "SetThreeSteps.update_the_with_below_values_and_zip_it_with_and(String,String,String,DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "error_message": "java.lang.ClassCastException: java.lang.Long cannot be cast to java.lang.Integer\r\n\tat baseinit.Base.waitToPageRender(Base.java:95)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:46)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:115)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:105)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:94)\r\n\tat runner.externalCucumberOptions.main(externalCucumberOptions.java:61)\r\n",
+                  "duration": 19315245415,
+                  "status": "failed"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "FieldName",
+                  "CapturedValue",
+                  "Value"
+                ]
+              },
+              {
+                "cells": [
+                  "Document_Type",
+                  "Human Resource",
+                  "Human Resource"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 525817,
+              "status": "skipped"
+            },
+            "line": 1383,
+            "name": "ingest the above zipped file to Azure Blob Storage",
+            "match": {
+              "location": "SetThreeSteps.ingest_the_above_zipped_file_to_Azure_Blob_Storage()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 517922,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 453576,
+              "status": "skipped"
+            },
+            "line": 1384,
+            "name": "navigate to given URL \"https://dmr-qa.exela.global/#/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://dmr-qa.exela.global/#/login\"",
+                  "offset": 22
+                }
+              ],
+              "location": "Steps.navigate_to_given_URL(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 602400,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 437786,
+              "status": "skipped"
+            },
+            "line": 1385,
+            "name": "enter username as \"septclient\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"septclient\"",
+                  "offset": 18
+                }
+              ],
+              "location": "Steps.enter_username_as(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 598847,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 418838,
+              "status": "skipped"
+            },
+            "line": 1386,
+            "name": "click on next button",
+            "match": {
+              "location": "Steps.click_on_next_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 592136,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 435812,
+              "status": "skipped"
+            },
+            "line": 1387,
+            "name": "enter Password as \"Pa$$w0rd\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Pa$$w0rd\"",
+                  "offset": 18
+                }
+              ],
+              "location": "Steps.enter_Password_as(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 581478,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2676850,
+              "status": "skipped"
+            },
+            "line": 1388,
+            "name": "click on signin button",
+            "match": {
+              "location": "Steps.click_on_signin_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 624112,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 454366,
+              "status": "skipped"
+            },
+            "line": 1389,
+            "name": "Click on profile picture",
+            "match": {
+              "location": "Steps.click_on_profile_picture()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 689246,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 417654,
+              "status": "skipped"
+            },
+            "line": 1390,
+            "name": "Click on SwitchTo option",
+            "match": {
+              "location": "Steps.click_on_SwitchTo_option()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 557003,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 428311,
+              "status": "skipped"
+            },
+            "line": 1391,
+            "name": "Switch to \"Mail Admin(Mail User)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mail Admin(Mail User)\"",
+                  "offset": 10
+                }
+              ],
+              "location": "Steps.switch_to(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 364361,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 379362,
+              "status": "skipped"
+            },
+            "line": 1392,
+            "name": "click OK button",
+            "match": {
+              "location": "Steps.click_OK_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 360414,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 275146,
+              "status": "skipped"
+            },
+            "line": 1393,
+            "name": "filter autogenerated DCN and verify it is available",
+            "match": {
+              "location": "SetThreeSteps.filter_autogenerated_DCN_and_verify_it_is_available()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 352519,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 370283,
+              "status": "skipped"
+            },
+            "line": 1394,
+            "name": "select an email",
+            "match": {
+              "location": "Steps.select_an_email()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 354887,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 264882,
+              "status": "skipped"
+            },
+            "line": 1395,
+            "name": "double click to open the email",
+            "match": {
+              "location": "SetThreeSteps.double_click_to_open_the_email()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 539238,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 360019,
+              "status": "skipped"
+            },
+            "line": 1396,
+            "name": "click on PDF \"Redaction\" option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Redaction\"",
+                  "offset": 13
+                }
+              ],
+              "location": "SetThreeSteps.click_on_PDF_option(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 504500,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 368704,
+              "status": "skipped"
+            },
+            "line": 1397,
+            "name": "redact the PDF at X-axis \"273\" and at Y-axis \"62\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"273\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"62\"",
+                  "offset": 45
+                }
+              ],
+              "location": "SetThreeSteps.redact_the_PDF_at_X_axis_and_at_Y_axis(String,String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1684430,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2316437,
+              "status": "skipped"
+            },
+            "line": 1398,
+            "name": "click on redact save",
+            "match": {
+              "location": "SetThreeSteps.click_on_redact_save()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 636744,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 581478,
+              "status": "skipped"
+            },
+            "line": 1399,
+            "name": "click on Inbox",
+            "match": {
+              "location": "SetThreeSteps.click_on_Inbox()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 585820,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 394757,
+              "status": "skipped"
+            },
+            "line": 1400,
+            "name": "filter autogenerated DCN and verify it is available",
+            "match": {
+              "location": "SetThreeSteps.filter_autogenerated_DCN_and_verify_it_is_available()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 522659,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 700695,
+              "status": "skipped"
+            },
+            "line": 1401,
+            "name": "select an email",
+            "match": {
+              "location": "Steps.select_an_email()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 543186,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 382125,
+              "status": "skipped"
+            },
+            "line": 1402,
+            "name": "select action as \"Send To\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Send To\"",
+                  "offset": 17
+                }
+              ],
+              "location": "Steps.select_action_as(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 610295,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 750828,
+              "status": "skipped"
+            },
+            "line": 1403,
+            "name": "enter recepient as \"Varshadighe31@yopmail.com\" and select it",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Varshadighe31@yopmail.com\"",
+                  "offset": 19
+                }
+              ],
+              "location": "Steps.enter_recepient_as_and_select_it(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 597663,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2827648,
+              "status": "skipped"
+            },
+            "line": 1404,
+            "name": "click on send butn",
+            "match": {
+              "location": "Steps.click_on_send_butn()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 734249,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 429496,
+              "status": "skipped"
+            },
+            "line": 1405,
+            "name": "click on send mail button",
+            "match": {
+              "location": "Steps.click_on_send_mail_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 691615,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 369493,
+              "status": "skipped"
+            },
+            "line": 1406,
+            "name": "System should throw a toggle message as \"Digital Mail Sent successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Digital Mail Sent successfully\"",
+                  "offset": 40
+                }
+              ],
+              "location": "Steps.system_should_throw_a_toggle_message_as(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 590163,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 411732,
+              "status": "skipped"
+            },
+            "line": 1407,
+            "name": "Click on profile picture",
+            "match": {
+              "location": "Steps.click_on_profile_picture()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 967946,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 630822,
+              "status": "skipped"
+            },
+            "line": 1408,
+            "name": "logout",
+            "match": {
+              "location": "Steps.logout()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 586610,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3386230,
+              "status": "skipped"
+            },
+            "line": 1409,
+            "name": "navigate to given URL \"https://dmr-qa.exela.global/#/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://dmr-qa.exela.global/#/login\"",
+                  "offset": 22
+                }
+              ],
+              "location": "Steps.navigate_to_given_URL(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 579899,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 309884,
+              "status": "skipped"
+            },
+            "line": 1410,
+            "name": "enter username as \"varsha001\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"varsha001\"",
+                  "offset": 18
+                }
+              ],
+              "location": "Steps.enter_username_as(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 676219,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 426733,
+              "status": "skipped"
+            },
+            "line": 1411,
+            "name": "click on next button",
+            "match": {
+              "location": "Steps.click_on_next_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 334755,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 244355,
+              "status": "skipped"
+            },
+            "line": 1412,
+            "name": "enter Password as \"Pa$$w0rd\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Pa$$w0rd\"",
+                  "offset": 18
+                }
+              ],
+              "location": "Steps.enter_Password_as(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 348571,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 484367,
+              "status": "skipped"
+            },
+            "line": 1413,
+            "name": "click on signin button",
+            "match": {
+              "location": "Steps.click_on_signin_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 498973,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 250276,
+              "status": "skipped"
+            },
+            "line": 1414,
+            "name": "filter autogenerated DCN and verify it is available",
+            "match": {
+              "location": "SetThreeSteps.filter_autogenerated_DCN_and_verify_it_is_available()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 328832,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 365545,
+              "status": "skipped"
+            },
+            "line": 1415,
+            "name": "select an email",
+            "match": {
+              "location": "Steps.select_an_email()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 556213,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 797410,
+              "status": "skipped"
+            },
+            "line": 1416,
+            "name": "double click to open the email",
+            "match": {
+              "location": "SetThreeSteps.double_click_to_open_the_email()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 510026,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 348176,
+              "status": "skipped"
+            },
+            "line": 1417,
+            "name": "check redaction rectangle is notdisplayed",
+            "match": {
+              "location": "SetThreeSteps.check_redaction_rectangle_is_notdisplayed()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 670298,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 357255,
+              "status": "skipped"
+            },
+            "line": 1418,
+            "name": "Click on profile picture",
+            "match": {
+              "location": "Steps.click_on_profile_picture()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 506474,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 695168,
+              "status": "skipped"
+            },
+            "line": 1419,
+            "name": "logout",
+            "match": {
+              "location": "Steps.logout()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 350545,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Base.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Yestess"
+          }
+        ]
+      }
+    ],
+    "name": "DMR Regression Suite Set2-2",
+    "description": "",
+    "id": "dmr-regression-suite-set2-2",
+    "keyword": "Feature",
+    "uri": "file:FeatureFiles/DMRSet2-2QA.feature",
+    "tags": []
+  }
+]

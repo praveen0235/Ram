@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document DocumentIdentifier="20206200KP009495001" DocumentFilename="20206200KP009495001.xml" TotalPageCount="2">
+  <Page Filename="document_2_envelope_page_2.pdf" ImageOffset="0" PageType="ENV" ParentPageType="NA" HighValueClaim="FALSE" DocumentIdentifier="20206200KP009495001">
+    <Field FieldName="Capture Application">
+      <Output CapturedValue="OPENBOX" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="OPENBOX" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="System ID">
+      <Output CapturedValue="DAYCS3-01" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="DAYCS3-01" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Customer Number">
+      <Output CapturedValue="septclient" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="septclient" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Engagement">
+      <Output CapturedValue="septclient_project" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="septclient_project" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Batch_Class">
+      <Output CapturedValue="FAX" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="FAX" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Batch_ID">
+      <Output CapturedValue="458122" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="458122" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Batch_Name">
+      <Output CapturedValue="DAYCE3-20206000179" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="DAYCE3-20206000179" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Batch_Priority">
+      <Output CapturedValue="2" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="2" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Batch_Creation_Date">
+      <Output CapturedValue="20200724" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="20200724" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Batch_Creation_Time">
+      <Output CapturedValue="014437" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="014437" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Tracking_ID">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Unique Barcode">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Received_Method">
+      <Output CapturedValue="FAX" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="FAX" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Received_Location">
+      <Output CapturedValue="230 N Main St, Dayton, OH 45402" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="230 N Main St, Dayton, OH 45402" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Received_Time_Zone">
+      <Output CapturedValue="-5" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="-5" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Received_Date">
+      <Output CapturedValue="20200724" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="20200724" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Received_Time">
+      <Output CapturedValue="014437" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="014437" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Source_File_Name">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Courier_Name">
+      <Output CapturedValue="USPS" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="USPS" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Container_ID">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Document_Type">
+      <Output CapturedValue="STANDARD APPEAL" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="STANDARD APPEAL" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="File_Size">
+      <Output CapturedValue="100038" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="100038" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="MailSorterUID">
+      <Output CapturedValue="ABC000000123" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="ABC000000123" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Sorter_Time_Zone">
+      <Output CapturedValue="-5" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="-5" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Sorter_Date">
+      <Output CapturedValue="20200724" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="20200724" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Sorter_Time">
+      <Output CapturedValue="111718" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="111718" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Scanning Location">
+      <Output CapturedValue="230 N Main St, Dayton, OH 45402" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="230 N Main St, Dayton, OH 45402" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="SCAN_Time_zone">
+      <Output CapturedValue="-5" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="-5" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="SCAN_Date">
+      <Output CapturedValue="20200724" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="20200724" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="SCAN_Time">
+      <Output CapturedValue="111718" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="111718" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Scan_File_Name">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Rescan">
+      <Output CapturedValue="N" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="N" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Scan_Operator_ID">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="ScanQC_Operator_ID">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Index_Time_zone">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Index_Operator_ID">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Index_Date">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Index_Time">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Index_Keystrokes">
+      <Output CapturedValue="0" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="0" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="IndexQC_Time_zone">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="IndexQC_Operator_ID">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="IndexQC_Date">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="IndexQC_Time">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="IndexQC_Keystrokes">
+      <Output CapturedValue="0" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="0" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Release_Time_zone">
+      <Output CapturedValue="-4" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="-4" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Release_Date">
+      <Output CapturedValue="20200724" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="20200724" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Release_Time">
+      <Output CapturedValue="032930" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="032930" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Page_Count">
+      <Output CapturedValue="2" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="2" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Front Page Count">
+      <Output CapturedValue="2" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="2" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Back Page Count">
+      <Output CapturedValue="0" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="0" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Number_of_Images">
+      <Output CapturedValue="2" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="2" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Image_Bit_Depth">
+      <Output CapturedValue="1" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="1" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Recipient Name">
+      <Output CapturedValue="aloadmailuser1" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="aloadmailuser1" Confidence="95" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Recipient Name1">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="95" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Recipient Email">
+      <Output CapturedValue="aloadmailuser1@mail.com" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="aloadmailuser1@mail.com" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Recipient Address1">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="95" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Recipient Address2">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="95" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Recipient City">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="95" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Recipient State">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="95" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Recipient Postal Code">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="95" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Sender Name">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="95" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Sender Name1">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="95" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Sender Company">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="0" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Sender Email">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Sender Address1">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="95" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Sender Address2">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="95" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Sender City">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="95" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Sender State">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="95" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Sender Postal Code">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="95" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Postal Post Location">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Postal Post Date">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="Department">
+      <Output CapturedValue="" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="" Confidence="0" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="JunkMail">
+      <Output CapturedValue="False" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="False" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="UserRoutingRule">
+      <Output CapturedValue="Deliver Physically and Digitally" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="Deliver Physically and Digitally" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <Field FieldName="UserOptOut">
+      <Output CapturedValue="False" KeyPassesRequired="0">
+        <DataSource Name="SYSTEM" Value="False" Confidence="100" ConfidenceString="" />
+      </Output>
+    </Field>
+    <KeyWord><![CDATA[INBOUND NOTIFICATION : FAX RECEIVED SUCCESSFULLY '
+TIME RECEIVED REMOTE CSID DURATION PAGES Received STATUS
+July 24, 2020 at 1:29.44 PM EDT S4 2
+07/24/2020 1:30 PH FAX 8127387833 HARRISON_COUNTY_HOSPITAL 0001/0002
+Carer g
+Source
+Provider Clinical/Claim Appeal Form
+Please:note itefO004006:14;det4SIreproe'ain '4iiii06igglifitiats:%:',, i -
+,,, . t i%, :N t
+7
+include supporting documentation - incomplete submission will be returned for additional information • Applicable timely filing limits apply
+10‘10,S0,,:ingicatel,Thelo)loWin,g atierft?InfOrmaticrn;;J:' ' •••• ,I•t, I,) `i 'III ;IS
+Member NamoWla (-Ann, lime ,\. vo Date of Service P - \ 0 ; oa D
+eno
+11 OC/15 i 0 9 H 1 'I C 0 Code /Service Not Covered L,__
+Member ID Number
+Place Seivic4. \ O. z C 4I' Cot ri-\ \-05 Phi \ CC'
+of C h» s
+'flgas0146tVillit7ieitifEtaiirig . YOfil1:0 1.]:,Ikiiii0 ''St1041S'; I,):' Iiig‘liner'' vi•ri . ' . ••
+, t,,, .. L- P ' '' wZ
+Provider Name (l cc ‘,4n rt C n .w.-.6•-aracA\-ci., CareSource Provider ID
+k et) (%) t 4g -211 IA D1c3 t01-1CY \ 0 .......,- U
+Provider NPI Number \ rl \ Claim Number P
+Telephone (i 11)) -1346 4 :1/2 <I Requester YU/ O. 4\ (Y \
+Provider Number - Name \ -■ / r
+..$0100110 eiNOt..*Fictteolltilatti,agpeaf:;t9pe;,,,,; inclUde';'requiredidOCUMIntation'::,:„
+• ,•
+'1k Claim Appeal An adverse decision regarding payment tor • Appeal form
+— • Supporting documentation
+a submitted claim or a denied claim for services rendered to a Original remittance
+CaroSource member. 0.) % advice
+? \ .SE.. \-) e PCO 0.2;6 \ G. \ WI 1,01.01/
+a a ITohfiel provil der /facility ircridering services has 365 days from the dale of service
+Na S-5 o tTh CO(AVI -‘Ani.. pk c.,
+c r c 6 b
+\ \ 54 0 ut c)■
+El Clinical Appeal — A request to review a determination • Appeal form
+not to certify an admission, extension or stay, or other health • Records supporting medical necessity
+care service conducted by.a peer review who was not • Original remittance advice
+involved in any previous adverse determination man-
+CertilicatiOn decision pertaining to the same episode or care. The providedfacility rendering Service has 180 days from the date of service
+to file a clinical appeal.
+�?� Corrected Claim — Any correction of the date of service,
+procedure/diagnosis codo, incorrect unit count, location code Please send Corrected Claims to:
+and/or modifier to a previously processed claim.
+CareSourco
+Resubmit the entire claim with updated information as a STOP ATTN: Claims Dept.
+Corrected Claim, If you disagree with the amount paid on a claim P.O. Box 3607
+line, you will need to submit an appeal. Dayton, OH 45401.3607
+Ikeaoolii,g4r%iiiaV,4iligVIIIP i .. r• . ,,. i.„; '' itIlli • Iiii1iio'' Ii
+,, i i, ,i, , ,
+C \ ,,..„,,,&.,ym e cc 0 (--- e co cab sea. LA. in ci -es- IA.) co •
+CA. \ rsrl
+0 1.1 • v • • e, c\ •
+rvi?ii,:orla is ,atiii gatiiin 0 - ; . . ,, ! , , ;':re , ,
+Claim Appeals Department Clinical Alopecia Department Provider Claim Appeals Coordinator
+P.O. Box 2008 P.O. Box 11)47 Fax Number: 937-531-2398
+Dayton. ON 45401-2008 Dayton. OH 45401.1947
+IN-P-0088 -V.2: Data Issuod 10/17/2017 OMPP Approved 1 211 4/201 6
+]]></KeyWord>
+  </Page>
+  <Page Filename="document_2_content_page_2.pdf" ImageOffset="1" PageType="CONTENT" ParentPageType="ENV" HighValueClaim="FALSE" DocumentIdentifier="20206200KP009495001">
+    <KeyWord><![CDATA[IAL 14] UUO2/ UUU2
+V I / GY/ GULV 1.../V • a as . I . .....a. v sr a ...a .......... ----- ---- - -- - - -- - • OTF YPE
+HARRISON COUNTY HOSPITAL ' 22 wor15000570587 YAL HALL
+1141 HOSPITAL DRIVE NW wx.n 34911 0141
+CORYDON IN 471122164 2 Ana T V NO 0000 11 u PM L AI NT LOVLII• PLHICC
+li• 7 ImOUNN
+_81273 a u 753 812_7_36_7_8_33 351180407 061020 061020 I
+0 PATIENT NAML p- MAT ADD/11ED H773 N_RADIATOR RD
+LI
+L1REDMO ut'S,4 dE O.L.ISH cIN d471186936
+In nirm-rmuL LW ADMIA 12 HR .I/ny 14 TYPL 15 LH 15 riTAT CONDI I AIN Gomm 2.0 AC DT :10
+L 15 WIC IL' 10 20 22 10 24 27 20 '7 ETAT1
+Sts8_0_11_9fi UI 3 2 01
+II OcCIUD111 NeL ill OCCumnENC,I 01.1WHEAND1 )4 OCOORol0401 000lcuuLNU_DYN in 0117.1,11111.111,1' AN //
+00M, DAT1 COO' 0A11: ILO COOK DATff roux 04H1211C1H 0014r I Hnn• IHNptilH
+11 061020
+211 10 VALuL Loor.„ 40 VALUECOW(S e1 VALUr 110710
+9 •• • NI Cou• AMOUNT • 0Vt, r
+REDMON MARSHA
+773 N RADIATOR RD
+ENGL SH_TX__4_7118 -6_9 36
+42 nu., Cu. 43 nrDRIPTION .14 i 4,11:',/ nAlt, HIPIAL COui pL LIry IAII a0 NW UN' I . .17 TOTAL CHAIIIII .. A0 NONCoM ii WES A0
+0301 RIA NONANTIBODY 83519 061020 1 13800
+'0001 PAGE10F 1 CREATIONDATE 07242070TALS 13800 000 3
+DO YAYLR NAMr 'II HIM TH PLAN IL) 1.5 /.4 PRIOR RAY/0ND) 52 00. AMDI1NT Dui_ (•O 1851378137
+I N 0 1 a
+'CARESOURCE MARKETPLACE 999990000 Y 37
+12111L11
+pnv irl
+Nn 111.011L011 NAME ED FPEL 22 IA111111101 Ififf(201 ID 111 011011P NAML 02 INWHANON 0110117 NO
+'REDMON MARSHA 18 10810947900
+00
+00
+11TILAI MLA( AUTHORI:ATON COWL, AA DOCUMLN/ CONTROL NUMnrr1 05 1E171(won NAML
+tfICI( E1165 Ell
+0
+GO ADMIT I r(1°A101: E1165 1114A, 1 7,.,
+DV E0
+01 1•10 AL 0100 Olnrili PRO WWWW I 10. ,Urt D IL 711ATTANUINC iNF1 1f14476-3am 1:12
+norm DATA 001)11 OATS , (' DAT1
+, MCCARttr FIIYT •
+0. OTHI1R maccoung d. DTHI n 17711111 01/141 • I/ UPLHATINO Nil DEN-
+COCA DAT/ 02D1 Ilmc
+IAA w ar
+u o FILNI• uvr. °G 328 2NC0060 co co z o [wa /2 OTHER Nil 0.1AL
+CARESOURCE MARKETPLACE N LApr [purr
+PO BOX 3607 [ Iu011ILH NM J.NI i
+DAYTON OH 45401-3607 H LA^r rue:,
+uu-u AMC 14, ' 11) i I IMILI-4000 uuu: NUBC IL HCATION'. ONL 1 t11- peATER GII I nNLI nHL MAUI. A RANT H17
+31001050C
+]]></KeyWord>
+  </Page>
+</Document>

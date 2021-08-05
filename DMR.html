@@ -1,0 +1,2554 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DMR</title>
+        <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+        <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+	    <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7e408aed24af91e1ad76f49a74ecfa0ef1d97cfb/spark/css/spark-style.css" rel="stylesheet" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<style type="text/css">
+
+            
+                
+            
+        
+</style></head>    <script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<body class="spa bdd-report standard">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+<div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary">DMR</span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">Feb 22, 2021 08:34:45</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div><div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown" onclick="toggleView('test-view')">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown" onclick="toggleView('tag-view')">
+        <a id="nav-tag" class="dropdown-toggle" href="tag.html">
+          <span class="icon-holder">
+            <i class="fa fa-tag"></i>
+          </span>
+          <span class="title">Tags</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown" onclick="toggleView('exception-view')">
+        <a id="nav-ex" class="dropdown-toggle" href="exception.html">
+          <span class="icon-holder">
+            <i class="fa fa-bug"></i>
+          </span>
+          <span class="title">Exception</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>            <div class="page-container">
+                <div class="main-content">
+<div class="test-wrapper row test-view">
+	<div class="test-list">
+		<div class="test-list-tools">
+			<ul class="tools pull-left">
+				<li>
+					<a href="">
+					<span class="font-size-14">Tests</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="tools text-right">
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					<i class="fa fa-exclamation-circle"></i>
+					</a>
+					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+						<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
+						<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
+						
+						
+						
+						<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning pull-right"></span></a>
+						<div class="dropdown-divider"></div>
+						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+					</ul>
+				</li>
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					<i class="fa fa-tag"></i>
+					</a>
+					<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+						<a class="dropdown-item" href="#">@Yespraveen</a>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="test-list-wrapper scrollable">
+			<ul class="test-list-item">
+				<li class="test-item"  status="fail" test-id="1"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">DMR Regression Suite Set2-2</p>
+							<p class="duration text-sm">0h 10m 47s+307ms</p>
+							<span class="datetime">08:34:55 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-fail">DMR Regression Suite Set2-2</h5>
+									<span class='badge badge-success'>02.22.2021 08:34:55</span>
+									<span class='badge badge-danger'>02.22.2021 08:45:42</span>
+									<span class='badge badge-default'>0h 10m 47s+307ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+
+<div class="accordion mt-4">
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">To check whether mail is received in Undeliverable mails folder and new mail on ingestion notification mail when file ingested contains Recipient name as blank and file ingested does not have matching criteria as mentioned in routing rule saved.</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.update_the_with_below_values_and_zip_it_with_and(String,String,String,DataTable)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then update the "Base.xml" with below values and zip it with "document_2_envelope_page_1.pdf" and "merged.pdf"</span>
+							</div>
+				<div class="details"><table class='runtime-table table-striped table'><tr><td>FieldName</td><td>CapturedValue</td><td>Value</td></tr><tr><td>Recipient Name</td><td></td><td></td></tr><tr><td>Recipient Email</td><td></td><td></td></tr><tr><td>Batch_Priority</td><td>aaa</td><td>aaa</td></tr><tr><td>Document_Type</td><td>test</td><td>test</td></tr></table></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.ingest_the_above_zipped_file_to_Azure_Blob_Storage()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then ingest the above zipped file to Azure Blob Storage</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.navigate_to_given_URL(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then navigate to given URL "https://dmr-qa.exela.global/#/login"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_username_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter username as "septclient"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_next_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on next button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_Password_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter Password as "Pa$$w0rd"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="Steps.click_on_signin_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And click on signin button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_profile_picture()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Click on profile picture</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_SwitchTo_option()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Click on SwitchTo option</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.switch_to(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Switch to "Mail Admin(Mail User)"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_OK_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click OK button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.click_on_undelivered_mail_box()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on undelivered mail box</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.filter_autogenerated_DCN_and_verify_it_is_available()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then filter autogenerated DCN and verify it is available</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_profile_picture()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Click on profile picture</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="Steps.logout()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And logout</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.navigate_to_given_URL(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then navigate to given URL "http://www.yopmail.com/en/"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_yopmail_id_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter yopmail id as "varshadighe3108@yopmail.com"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="Steps.click_on_check_inbox()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When click on check inbox</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.refresh_the_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then refresh the page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.refresh_the_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then refresh the page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.system_should_display_email(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then system should display "You Got Mail" email</span>
+							</div>
+				<div class="details"></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">To check whether mail is received in Undeliverable mails folder of all mail admins when no routing rule is present and file is ingested for the  client</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.update_the_with_below_values_and_zip_it_with_and(String,String,String,DataTable)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then update the "Base.xml" with below values and zip it with "document_2_envelope_page_1.pdf" and "merged.pdf"</span>
+							</div>
+				<div class="details"><table class='runtime-table table-striped table'><tr><td>FieldName</td><td>CapturedValue</td><td>Value</td></tr><tr><td>Sender Email</td><td>varshadi@yopmail.com</td><td>varshadi@yopmail.com</td></tr><tr><td>Batch_Priority</td><td>aaa</td><td>aaa</td></tr><tr><td>Document_Type</td><td>test</td><td>test</td></tr></table></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.ingest_the_above_zipped_file_to_Azure_Blob_Storage()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then ingest the above zipped file to Azure Blob Storage</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.navigate_to_given_URL(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then navigate to given URL "https://dmr-qa.exela.global/#/login"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_username_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter username as "septclient"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_next_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on next button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_Password_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter Password as "Pa$$w0rd"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="Steps.click_on_signin_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And click on signin button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_profile_picture()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Click on profile picture</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_SwitchTo_option()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Click on SwitchTo option</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.switch_to(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Switch to "Mail Admin(Mail User)"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_OK_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click OK button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.click_on_undelivered_mail_box()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on undelivered mail box</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.filter_autogenerated_DCN_and_verify_it_is_available()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then filter autogenerated DCN and verify it is available</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_profile_picture()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Click on profile picture</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="Steps.logout()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And logout</span>
+							</div>
+				<div class="details"></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Whenuser takes an action on it then the rest of the flow must follow as usual like the user's name must be then added in the User section and the action taken by him</div>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.update_the_with_below_values_and_zip_it_with_and(String,String,String,DataTable)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then update the "Base.xml" with below values and zip it with "document_2_envelope_page_1.pdf" and "merged.pdf"</span>
+							</div>
+				<div class="details"><table class='runtime-table table-striped table'><tr><td>FieldName</td><td>CapturedValue</td><td>Value</td></tr><tr><td>Recipient Email</td><td>varshadighe3108@yopmail.com</td><td>varshadighe3108@yopmail.com</td></tr></table></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.ingest_the_above_zipped_file_to_Azure_Blob_Storage()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then ingest the above zipped file to Azure Blob Storage</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.navigate_to_given_URL(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then navigate to given URL "https://dmr-qa.exela.global/#/login"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_username_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter username as "septclient"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_next_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on next button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_Password_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter Password as "Pa$$w0rd"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="Steps.click_on_signin_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And click on signin button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_toggle_menu()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on toggle menu</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_left_pane_menu(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on left pane menu "Reports"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_the_report(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on the report "Chain of Custody Report"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_download_icon()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on download icon</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.first_record_in_excel_against_user_column_should_be_and_event_column_should_be(String,String)">
+								<span class="alert-icon fail-bg">
+									<i class="fa fa-times text-white"></i>
+								</span>
+								<span>Then first record in excel against user column should be "septClient sept2020" and event column should be "Mail Status Change"</span>
+							</div>
+				<textarea disabled class="code-block">junit.framework.ComparisonFailure: expected:<[septClient sept2020]> but was:<[Not My Mail]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at stepDefinitions.SetThreeSteps.first_record_in_excel_against_user_column_should_be_and_event_column_should_be(SetThreeSteps.java:942)
+	at ?.first record in excel against user column should be "septClient sept2020" and event column should be "Mail Status Change"(file:FeatureFiles/DMRSet2-2QA.feature:250)
+</textarea>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_profile_picture()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Then Click on profile picture</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Base.waitToPageRender(Scenario)</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start and" title="Steps.logout()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>And logout</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Base.waitToPageRender(Scenario)</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Base.closeBrowser(Scenario)</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded1.png' src='../embedded1.png'></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">To check that whether correct received time [received time in xml - (time zone in xml in hrs) and then subtract 5 hr from that value] is showing for file in Recon Report when file is ingested through Open box API in DMR application for particular client</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.update_the_with_below_values_and_zip_it_with_and(String,String,String,DataTable)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then update the "Base.xml" with below values and zip it with "document_2_envelope_page_1.pdf" and "merged.pdf"</span>
+							</div>
+				<div class="details"><table class='runtime-table table-striped table'><tr><td>FieldName</td><td>CapturedValue</td><td>Value</td></tr><tr><td>Document_Type</td><td>Human Resource</td><td>Human Resource</td></tr><tr><td>Received_Date</td><td>20210128</td><td>20210128</td></tr></table></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.ingest_the_above_zipped_file_to_Azure_Blob_Storage()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then ingest the above zipped file to Azure Blob Storage</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.navigate_to_given_URL(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then navigate to given URL "https://dmr-qa.exela.global/#/login"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_username_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter username as "septclient"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_next_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on next button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_Password_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter Password as "Pa$$w0rd"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="Steps.click_on_signin_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And click on signin button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_toggle_menu()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on toggle menu</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_left_pane_menu(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on left pane menu "Reports"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_the_report(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on the report "Reconciliation Report"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.filter_the_received_date(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then filter the received date "01/28/2021"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.click_on_processed_count()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on processed count</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.filter_autogenerated_DCN_and_verify_it_is_available()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then filter autogenerated DCN and verify it is available</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.recived_date_should_be_for_the_email(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then recived date should be "01-28-2021 12:00:00" for the email</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_profile_picture()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Click on profile picture</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="Steps.logout()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And logout</span>
+							</div>
+				<div class="details"></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">To Verify User should get only one email  after ingestion of files.</div>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.navigate_to_given_URL(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then navigate to given URL "http://www.yopmail.com/en/"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_yopmail_id_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter yopmail id as "varshadighe3108@yopmail.com"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="Steps.click_on_check_inbox()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When click on check inbox</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.click_on_delete_dropdown()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on delete dropdown</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.click_on_empty_inbox()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on empty inbox</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.update_the_with_below_values_and_zip_it_with_and(String,String,String,DataTable)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then update the "Base.xml" with below values and zip it with "document_2_envelope_page_1.pdf" and "merged.pdf"</span>
+							</div>
+				<div class="details"><table class='runtime-table table-striped table'><tr><td>FieldName</td><td>CapturedValue</td><td>Value</td></tr><tr><td>Document_Type</td><td>Human Resource</td><td>Human Resource</td></tr></table></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.ingest_the_above_zipped_file_to_Azure_Blob_Storage()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then ingest the above zipped file to Azure Blob Storage</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.refresh_the_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then refresh the page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.refresh_the_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then refresh the page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.refresh_the_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then refresh the page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.system_should_display_email(String)">
+								<span class="alert-icon fail-bg">
+									<i class="fa fa-times text-white"></i>
+								</span>
+								<span>Then system should display "You Got Mail" email</span>
+							</div>
+				<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='lms'])[1]"}
+  (Session info: chrome=88.0.4324.182)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DCAP-WEB-UTINO1', ip: '192.168.56.1', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\SKALIY~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:20811}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:virtualAuthenticators: true}
+Session ID: a92cb9c6130b6b6aab10a32c4cf464ac
+*** Element info: {Using=xpath, value=(//span[@class='lms'])[1]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy27.getText(Unknown Source)
+	at framework.Elements.VerifyTextEquals(Elements.java:75)
+	at stepDefinitions.Steps.system_should_display_email(Steps.java:328)
+	at ?.system should display "You Got Mail" email(file:FeatureFiles/DMRSet2-2QA.feature:971)
+</textarea>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Base.closeBrowser(Scenario)</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded2.png' src='../embedded2.png'></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Validate Not my mail Action is working</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.update_the_with_below_values_and_zip_it_with_and(String,String,String,DataTable)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then update the "Base.xml" with below values and zip it with "document_2_envelope_page_1.pdf" and "merged.pdf"</span>
+							</div>
+				<div class="details"><table class='runtime-table table-striped table'><tr><td>FieldName</td><td>CapturedValue</td><td>Value</td></tr><tr><td>Document_Type</td><td>Human Resource</td><td>Human Resource</td></tr></table></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.ingest_the_above_zipped_file_to_Azure_Blob_Storage()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then ingest the above zipped file to Azure Blob Storage</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.navigate_to_given_URL(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then navigate to given URL "https://dmr-qa.exela.global/#/login"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_username_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter username as "septclient"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_next_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on next button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_Password_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter Password as "Pa$$w0rd"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="Steps.click_on_signin_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And click on signin button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_profile_picture()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Click on profile picture</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_SwitchTo_option()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Click on SwitchTo option</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.switch_to(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Switch to "Mail Admin(Mail User)"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_OK_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click OK button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.filter_autogenerated_DCN_and_verify_it_is_available()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then filter autogenerated DCN and verify it is available</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.select_an_email()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then select an email</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.select_action_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then select action as "Not My Mail"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_Email_id_as_in_Do_you_want_to_suggest_any_other_user_name(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Enter Email id as  "mailuserauto@yopmail.com" in Do_you_want_to_suggest_any_other_user_name?</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.click_on_Yes_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on Yes button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_profile_picture()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Click on profile picture</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="Steps.logout()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And logout</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.navigate_to_given_URL(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then navigate to given URL "http://www.yopmail.com/en/"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_yopmail_id_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter yopmail id as "mailuserauto@yopmail.com"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="Steps.click_on_check_inbox()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When click on check inbox</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.system_should_display_email(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then system should display "Digital Mail - Re-Route Notification" email</span>
+							</div>
+				<div class="details"></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Validate Physical delivery Action is working</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.update_the_with_below_values_and_zip_it_with_and(String,String,String,DataTable)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then update the "Base.xml" with below values and zip it with "document_2_envelope_page_1.pdf" and "merged.pdf"</span>
+							</div>
+				<div class="details"><table class='runtime-table table-striped table'><tr><td>FieldName</td><td>CapturedValue</td><td>Value</td></tr><tr><td>Document_Type</td><td>Human Resource</td><td>Human Resource</td></tr></table></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.ingest_the_above_zipped_file_to_Azure_Blob_Storage()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then ingest the above zipped file to Azure Blob Storage</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.navigate_to_given_URL(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then navigate to given URL "https://dmr-qa.exela.global/#/login"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_username_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter username as "septclient"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_next_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on next button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_Password_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter Password as "Pa$$w0rd"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="Steps.click_on_signin_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And click on signin button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_profile_picture()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Click on profile picture</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="SetTwoSteps.click_on_Manage_Address()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When Click on Manage Address</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetTwoSteps.filter_the_address(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then filter the address "Office"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="SetTwoSteps.delete_it()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And delete it</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="SetTwoSteps.click_on_Add_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When Click on Add button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="SetTwoSteps.click_on_drop_down_arrow(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When click on drop down arrow "Address Type"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="SetTwoSteps.select_drop_down_option_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When select drop down option as "Office"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="SetTwoSteps.add_Address_Name_as_Desk_Number_as_Floor_number_as_mobileno_as_city_as_state_as_country_as_zip_code_as(String,String,String,String,String,String,String,String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When Add Address Name as "S B ROAD Pune", Desk Number as "209" , Floor number as "9" ,mobileno. as "8099685985" ,city as "Pune" ,state as "Maharastra" ,country as "India" ,zip code as "411057"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="SetTwoSteps.click_on_save_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When click on save button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_profile_picture()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Click on profile picture</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_SwitchTo_option()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Click on SwitchTo option</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.switch_to(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Switch to "Mail Admin(Mail User)"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_OK_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click OK button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.filter_autogenerated_DCN_and_verify_it_is_available()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then filter autogenerated DCN and verify it is available</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.select_an_email()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then select an email</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.select_action_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then select action as "Manage Physical delivery"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_Create_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on Create button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_profile_picture()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Click on profile picture</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="SetTwoSteps.click_on_Manage_Address()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When Click on Manage Address</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetTwoSteps.filter_the_address(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then filter the address "Office"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="SetTwoSteps.delete_it()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And delete it</span>
+							</div>
+				<div class="details"></div>
+					</div>
+				</div>
+	</div>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="fail" test-id="277"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">DMR Regression Suite Set2</p>
+							<p class="duration text-sm">0h 7m 17s+898ms</p>
+							<span class="datetime">08:45:49 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-fail">DMR Regression Suite Set2</h5>
+									<span class='badge badge-success'>02.22.2021 08:45:49</span>
+									<span class='badge badge-danger'>02.22.2021 08:53:07</span>
+									<span class='badge badge-default'>0h 7m 17s+898ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+
+<div class="accordion mt-4">
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Check whether the user is able to see the new filters added in Volume Report</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="Steps.navigate_to_given_URL(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given navigate to given URL "https://dmr-qa.exela.global/#/login"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_username_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter username as "septclient"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_next_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on next button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_Password_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter Password as "Pa$$w0rd"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="Steps.click_on_signin_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And click on signin button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_toggle_menu()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on toggle menu</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_left_pane_menu(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on left pane menu "Reports"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_the_report(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on the report "Volume Report"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="SetThreeSteps.click_on_advanced_search()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When click on advanced search</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.select_from_date_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then select from date as "09/01/2020"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="SetTwoSteps.click_on_drop_down_arrow(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When click on drop down arrow "Source"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="SetTwoSteps.select_drop_down_option_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When select drop down option as "SCAN"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.click_on_search_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on search button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.filter_scan_date(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then filter scan date "09-14-2020"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.the_number_of_Volume_records_should_be(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then the number of Volume records should be "79"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_profile_picture()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Click on profile picture</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="Steps.logout()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And logout</span>
+							</div>
+				<div class="details"></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">The Chain of custody report must show all the details which are visible on report page when I download the report</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="Steps.navigate_to_given_URL(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given navigate to given URL "https://dmr-qa.exela.global/#/login"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_username_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter username as "septclient"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_next_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on next button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_Password_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter Password as "Pa$$w0rd"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="Steps.click_on_signin_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And click on signin button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_toggle_menu()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on toggle menu</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_left_pane_menu(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on left pane menu "Reports"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_the_report(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on the report "Chain of Custody Report"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_download_icon()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on download icon</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.report_should_display_the_coulmns(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then report should display the coulmns "DATE, DCN, DELIVERY INSTRUCTIONS, DELIVERY PRIORITY, DOC TYPE, EVENT, FIELD, FROM, QUEUE, RECIPIENT, SOURCE, TO, USER"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_profile_picture()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Click on profile picture</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="Steps.logout()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And logout</span>
+							</div>
+				<div class="details"></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">To check that only 10 records are displayed by default and can change to 25, 50 or 100</div>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="Steps.navigate_to_given_URL(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given navigate to given URL "https://dmr-qa.exela.global/#/login"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_username_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter username as "septclient"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_next_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on next button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_Password_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter Password as "Pa$$w0rd"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="Steps.click_on_signin_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And click on signin button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_toggle_menu()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on toggle menu</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_left_pane_menu(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on left pane menu "Reports"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_the_report(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on the report "Reconciliation Report"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.filter_the_received_date_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then filter the received date as "09/14/2020"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.click_on_volume_received_count()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on volume received count</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.by_default_system_should_display_records_as_selected(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then by default system should display "10" records as selected</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.system_should_display_the_record_options_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then system should display the record options as "10,25,50,100"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.user_selects_as_option_then_system_should_display_records(String,String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then user selects "25" as option then system should display "25" records</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.user_selects_as_option_then_system_should_display_records(String,String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then user selects "50" as option then system should display "50" records</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.user_selects_as_option_then_system_should_display_records(String,String)">
+								<span class="alert-icon fail-bg">
+									<i class="fa fa-times text-white"></i>
+								</span>
+								<span>Then user selects "100" as option then system should display "100" records</span>
+							</div>
+				<textarea disabled class="code-block">junit.framework.ComparisonFailure: expected:<[100]> but was:<[92]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at stepDefinitions.SetThreeSteps.user_selects_as_option_then_system_should_display_records(SetThreeSteps.java:391)
+	at ?.user selects "100" as option then system should display "100" records(file:FeatureFiles/DMRSet2-QA.feature:1237)
+</textarea>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.user_clicks_on_Next_Right_arrow_key_then_system_should_display_next_records(String)">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Then user clicks on Next/Right arrow key then system should display next "101 - 200" records</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Base.waitToPageRender(Scenario)</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_download_icon()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Then click on download icon</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Base.waitToPageRender(Scenario)</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_profile_picture()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Then Click on profile picture</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Base.waitToPageRender(Scenario)</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start and" title="Steps.logout()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>And logout</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Base.waitToPageRender(Scenario)</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Base.closeBrowser(Scenario)</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded3.png' src='../embedded3.png'></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">To check whether when user logs in every day for the month his entry for the grand total will be only 1 count and not 30 counts</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="Steps.navigate_to_given_URL(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given navigate to given URL "https://dmr-qa.exela.global/#/login"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_username_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter username as "septclient"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_next_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on next button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_Password_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter Password as "Pa$$w0rd"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="Steps.click_on_signin_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And click on signin button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_toggle_menu()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on toggle menu</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_left_pane_menu(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on left pane menu "Reports"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_the_report(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on the report "Active User Report"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="Steps.select_from_date_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When select from date as "02/01/2021"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.enter_date_in_filter_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter date in filter as "02-21-2021"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="SetThreeSteps.Verify_page_displayed_per_pages(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And Verify page displayed per "3" pages</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_profile_picture()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Click on profile picture</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="Steps.logout()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And logout</span>
+							</div>
+				<div class="details"></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Check whether the fields like sender company,Department,Keyword,scanning location  are available in metadata</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="Steps.navigate_to_given_URL(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given navigate to given URL "https://dmr-qa.exela.global/#/login"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_username_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter username as "septclient"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_next_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on next button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.enter_Password_as(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then enter Password as "Pa$$w0rd"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="Steps.click_on_signin_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And click on signin button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_profile_picture()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Click on profile picture</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_SwitchTo_option()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Click on SwitchTo option</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.switch_to(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Switch to "Mail Admin(Mail User)"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_OK_button()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click OK button</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.select_an_email()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then select an email</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.double_click_to_open_the_email()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then double click to open the email</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.click_on_extended_info()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on extended info</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.click_on_metadata()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then click on metadata</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="SetThreeSteps.system_should_display_the_meta_data_options(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then system should display the meta data options "Conversion, Inventory Management, MailSorterUID, Metadata Profile ID, Metadata Profile Name, Records Management, SLADate, SLATime, Unique Barcode, User Defined05, User Defined06, User Defined07, User Defined08, User Defined09, User Defined10, User_Defined_04"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="Steps.click_on_profile_picture()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Click on profile picture</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="Steps.logout()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And logout</span>
+							</div>
+				<div class="details"></div>
+					</div>
+				</div>
+	</div>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="test-content scrollable">
+		<div class="test-content-tools">
+			<ul>
+				<li>
+					<a class="back-to-test" href="javascript:void(0)">
+					<i class="fa fa-arrow-left"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-content-detail">
+			<div class="detail-body"></div>
+		</div>
+	</div>
+</div><div class="test-wrapper row tag-view attributes-view">
+	<div class="test-list">
+		<div class="test-list-tools">
+			<ul class="tools pull-left">
+				<li>
+					<a href="">
+					<span class="font-size-14">Tags</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="tools text-right">
+				<li>
+					<a href="#">
+					<span class="badge badge-primary">1</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-list-wrapper scrollable">
+			<ul class="test-list-item">
+				<li class="test-item">
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">@Yespraveen</p>
+							<p class="duration text-sm">12 tests</p>
+							<span class="datetime">
+							<span class='badge badge-success'>9</span>
+							<span class='badge badge-danger'>3</span>
+							
+							
+							</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="info">
+							<h4>@Yespraveen</h4>
+							<span status="pass" class='badge badge-success'>9 passed</span>
+							<span status="fail" class='badge badge-danger'>3 failed</span>
+							
+							
+						</div>
+						<table class='table table-sm mt-4'>
+							<thead>
+								<tr>
+									<th class="status-col">Status</th>
+									<th class="timestamp-col">Timestamp</th>
+									<th>TestName</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>08:34:55 AM</td>
+									<td class='linked' test-id='2'>
+										To check whether mail is received in Undeliverable mails folder and new mail on ingestion notification mail when file ingested contains Recipient name as blank and file ingested does not have matching criteria as mentioned in routing rule saved.
+										<div class="">
+											<span class="badge badge-default">DMR Regression Suite Set2-2.To check whether mail is received in Undeliverable mails folder and new mail on ingestion notification mail when file ingested contains Recipient name as blank and file ingested does not have matching criteria as mentioned in routing rule saved.</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>08:36:45 AM</td>
+									<td class='linked' test-id='47'>
+										To check whether mail is received in Undeliverable mails folder of all mail admins when no routing rule is present and file is ingested for the  client
+										<div class="">
+											<span class="badge badge-default">DMR Regression Suite Set2-2.To check whether mail is received in Undeliverable mails folder of all mail admins when no routing rule is present and file is ingested for the  client</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="fail">
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>08:38:02 AM</td>
+									<td class='linked' test-id='80'>
+										Whenuser takes an action on it then the rest of the flow must follow as usual like the user's name must be then added in the User section and the action taken by him
+										<div class="">
+											<span class="badge badge-default">DMR Regression Suite Set2-2.Whenuser takes an action on it then the rest of the flow must follow as usual like the user's name must be then added in the User section and the action taken by him</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>08:39:18 AM</td>
+									<td class='linked' test-id='111'>
+										To check that whether correct received time [received time in xml - (time zone in xml in hrs) and then subtract 5 hr from that value] is showing for file in Recon Report when file is ingested through Open box API in DMR application for particular client
+										<div class="">
+											<span class="badge badge-default">DMR Regression Suite Set2-2.To check that whether correct received time [received time in xml - (time zone in xml in hrs) and then subtract 5 hr from that value] is showing for file in Recon Report when file is ingested through Open box API in DMR application for particular client</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="fail">
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>08:40:37 AM</td>
+									<td class='linked' test-id='146'>
+										To Verify User should get only one email  after ingestion of files.
+										<div class="">
+											<span class="badge badge-default">DMR Regression Suite Set2-2.To Verify User should get only one email  after ingestion of files.</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>08:41:33 AM</td>
+									<td class='linked' test-id='171'>
+										Validate Not my mail Action is working
+										<div class="">
+											<span class="badge badge-default">DMR Regression Suite Set2-2.Validate Not my mail Action is working</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>08:43:34 AM</td>
+									<td class='linked' test-id='218'>
+										Validate Physical delivery Action is working
+										<div class="">
+											<span class="badge badge-default">DMR Regression Suite Set2-2.Validate Physical delivery Action is working</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>08:45:49 AM</td>
+									<td class='linked' test-id='278'>
+										Check whether the user is able to see the new filters added in Volume Report
+										<div class="">
+											<span class="badge badge-default">DMR Regression Suite Set2.Check whether the user is able to see the new filters added in Volume Report</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>08:47:12 AM</td>
+									<td class='linked' test-id='315'>
+										The Chain of custody report must show all the details which are visible on report page when I download the report
+										<div class="">
+											<span class="badge badge-default">DMR Regression Suite Set2.The Chain of custody report must show all the details which are visible on report page when I download the report</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="fail">
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>08:48:20 AM</td>
+									<td class='linked' test-id='342'>
+										To check that only 10 records are displayed by default and can change to 25, 50 or 100
+										<div class="">
+											<span class="badge badge-default">DMR Regression Suite Set2.To check that only 10 records are displayed by default and can change to 25, 50 or 100</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>08:49:29 AM</td>
+									<td class='linked' test-id='383'>
+										To check whether when user logs in every day for the month his entry for the grand total will be only 1 count and not 30 counts
+										<div class="">
+											<span class="badge badge-default">DMR Regression Suite Set2.To check whether when user logs in every day for the month his entry for the grand total will be only 1 count and not 30 counts</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>08:50:34 AM</td>
+									<td class='linked' test-id='412'>
+										Check whether the fields like sender company,Department,Keyword,scanning location  are available in metadata
+										<div class="">
+											<span class="badge badge-default">DMR Regression Suite Set2.Check whether the fields like sender company,Department,Keyword,scanning location  are available in metadata</span>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="test-content scrollable">
+		<div class="test-content-tools">
+			<ul>
+				<li>
+					<a class="back-to-test" href="javascript:void(0)">
+					<i class="fa fa-arrow-left"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-content-detail">
+			<div class="detail-body"></div>
+		</div>
+	</div>
+</div><div class="test-wrapper row exception-view attributes-view">
+	<div class="test-list">
+		<div class="test-list-tools">
+			<ul class="tools pull-left">
+				<li>
+					<a href="">
+					<span class="font-size-14">Exception</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="tools text-right">
+				<li>
+					<a href="#">
+					<span class="badge badge-primary">2</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-list-wrapper scrollable">
+			<ul class="test-list-item">
+				<li class="test-item">
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">junit.framework.ComparisonFailure</p>
+							<p class="duration text-sm">2 tests</p>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="info">
+							<h4>junit.framework.ComparisonFailure</h4>
+						</div>
+						<table class='table table-sm mt-4'>
+							<thead>
+								<tr>
+									<th class="status-col">Status</th>
+									<th class="timestamp-col">Timestamp</th>
+									<th>TestName</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>08:39:06 AM</td>
+									<td class='linked' test-id='104'>
+										Then first record in excel against user column should be "septClient sept2020" and event column should be "Mail Status Change"
+										<div class="">
+											<span class="badge badge-default">Whenuser takes an action on it then the rest of the flow must follow as usual like the user's name must be then added in the User section and the action taken by him</span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>08:49:19 AM</td>
+									<td class='linked' test-id='372'>
+										Then user selects "100" as option then system should display "100" records
+										<div class="">
+											<span class="badge badge-default">To check that only 10 records are displayed by default and can change to 25, 50 or 100</span>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+				<li class="test-item">
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">org.openqa.selenium.NoSuchElementException</p>
+							<p class="duration text-sm">1 tests</p>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="info">
+							<h4>org.openqa.selenium.NoSuchElementException</h4>
+						</div>
+						<table class='table table-sm mt-4'>
+							<thead>
+								<tr>
+									<th class="status-col">Status</th>
+									<th class="timestamp-col">Timestamp</th>
+									<th>TestName</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>08:41:25 AM</td>
+									<td class='linked' test-id='168'>
+										Then system should display "You Got Mail" email
+										<div class="">
+											<span class="badge badge-default">To Verify User should get only one email  after ingestion of files.</span>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="test-content scrollable">
+		<div class="test-content-tools">
+			<ul>
+				<li>
+					<a class="back-to-test" href="javascript:void(0)">
+					<i class="fa fa-arrow-left"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-content-detail">
+			<div class="detail-body"></div>
+		</div>
+	</div>
+</div>                    <!-- dashboard -->
+<div class="container-fluid p-4 dashboard-view">
+	<div class="row">
+		<div class="col-sm-12 col-md-4">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Features</h6>
+				</div>
+				<div class="card-body">
+					<div class="">
+						<canvas id='parent-analysis' width='115' height='90'></canvas>
+					</div>
+				</div>
+				<div class="card-footer">
+					<div><small data-tooltip='0%'>
+						<b>0</b> features passed
+						</small>
+					</div>
+					<div>
+						<small data-tooltip='100%'><b>2</b> features failed, 
+						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+						</small>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-4">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Scenarios</h6>
+				</div>
+				<div class="card-body">
+					<div class="">
+						<canvas id='child-analysis' width='115' height='90'></canvas>
+					</div>
+				</div>
+				<div class="card-footer">
+					<div><small data-tooltip='75%'><b>9</b> scenarios passed</small></div>
+					<div>
+						<small data-tooltip='25%'><b>3</b> scenarios failed, 
+						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+						</small>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-4">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Steps</h6>
+				</div>
+				<div class="card-body">
+					<div class="">
+						<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+					</div>
+				</div>
+				<div class="card-footer">
+					<div><small data-tooltip='92.958%'><b>198</b> steps passed</small></div>
+					<div>
+						<small data-tooltip='1.408%'><b>3</b> steps failed, 
+						<b>12</b> skipped, <b data-tooltip='5.634%'>0</b> others
+						</small>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+					<div class="media justify-content-between">
+						<div class="card-header">
+							<h6 class="card-title">Features</h6>
+							<h2 class="font-size-28 font-weight-light mt-3">2</h2>
+							<span class="text-semibold text-success font-size-15">
+							<i class="ti-arrow-up font-size-11"></i> 
+							<span>.00%</span>
+							</span>
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-align-left font-size-70 opacity-01"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+					<div class="media justify-content-between">
+						<div class="card-header">
+							<h6 class="card-title">Scenarios</h6>
+							<h2 class="font-size-28 font-weight-light mt-3">12</h2>
+							<span class="text-semibold text-success font-size-15">
+							<i class="ti-arrow-up font-size-11"></i> 
+							<span>75.00%</span>
+							</span>
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-align-left font-size-70 opacity-01"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+					<div class="media justify-content-between">
+						<div class="card-header">
+							<h6 class="card-title">Start</h6>
+							<h4 class="font-weight-light mt-4">Feb 22, 2021 08:34:45</h4>
+							<span class="text-semibold text-success font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-success opacity-01"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+					<div class="media justify-content-between">
+						<div class="card-header">
+							<h6 class="card-title">Duration</h6>
+							<h4 class="font-weight-light mt-4">0h 18m 24s+196ms</h4>
+							<span class="text-semibold font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 opacity-01"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Timeline</h6>
+				</div>
+				<div class="card-body">
+					<div class="">
+						<canvas id="timeline" height="120"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Tags</h6>
+				</div>
+				<div class="table-overflow">
+					<table class="table table-sm">
+						<thead>
+							<tr class="bg-gray">
+								<th>Name</th>
+								<th>Passed</th>
+								<th>Failed</th>
+								<th>Others</th>
+								<th>Passed %</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>@Yespraveen</td>
+								<td>9</td>
+								<td>3</td>
+								<td>0</td>
+								<td>
+									75%
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	var statusGroup = {
+	    parentCount: 2,
+		passParent: 0,
+		failParent: 2,
+		fatalParent: 0,
+		errorParent: 0,
+		warningParent: 0,
+		skipParent: 0,
+		exceptionsParent: 2,
+		childCount: 12,
+		passChild: 9,
+		failChild: 3,
+		fatalChild: 0,
+		errorChild: 0,
+		warningChild: 0,
+		skipChild: 0,
+		infoChild: 0,
+		debugChild: 0,
+		exceptionsChild: 3,
+		grandChildCount: 213,
+		passGrandChild: 198,
+		failGrandChild: 3,
+		fatalGrandChild: 0,
+		errorGrandChild: 0,
+		warningGrandChild: 0,
+		skipGrandChild: 12,
+		infoGrandChild: 0,
+		debugGrandChild: 0,
+		exceptionsGrandChild: 15,
+		eventsCount: 213,
+		passEvents: 195,
+		failEvents: 3,
+		fatalEvents: 0,
+		errorEvents: 0,
+		warningEvents: 0,
+		skipEvents: 12,
+		infoEvents: 3,
+		debugEvents: 0,
+		exceptionsEvents: 0
+	};
+</script>
+<script>
+	var timeline = {
+	        "DMR Regression Suite Set2-2":647.307,"DMR Regression Suite Set2":437.898
+	};
+</script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ac7abbc71b4bb073da00153a5a3fdbcfe0c95e2a/spark/js/spark-script.js"></script>
+<script type="text/javascript">
+
+
+            
+                $(document).ready(function() {
+                    
+                });
+            
+        
+</script></body>
+</html>
